@@ -1,0 +1,35 @@
+<%- include('../Includes/header.ejs')%>
+
+
+<link rel="stylesheet" href="/CSS/dashboard.css">
+
+<%-include('../Includes/navbar.ejs')%>
+
+</head>
+<body>
+
+<main>
+    
+    <div class="container">
+        <h1 class="mb-4">Create Blog</h1>
+        <form action="/postBlog" method="POST" enctype="multipart/form-data">
+            <input type="hidden" name="email" value="<%=data.email%>">
+            <div class="form-group">
+                <label for="blogTitle">Title</label>
+                <input type="text" class="form-control" name="blogTitle" placeholder="Enter blog title">
+            </div>
+            <div class="form-group">
+                <label for="blogDescription">Blog Description</label>
+                <textarea class="form-control" name="blogDescription" rows="5" placeholder="Enter blog description"></textarea>
+            </div><br>
+            <div class="form-group">
+                <label for="blogImage">Blog Image</label>
+                <input type="file" class="form-control-file" name="blogImage" multiple>
+            </div><br>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</main>
+
+
+<%-include('../Includes/footer.ejs')%>

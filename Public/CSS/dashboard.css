@@ -1,0 +1,21 @@
+body {
+    padding-top: 50px;
+}
+.container {
+    text-align: center;
+}
+.btn-custom {
+    margin: 5px;
+}
+main{
+    margin-top: 50px;
+    margin-bottom: 400px;
+}
+h3{
+    text-align: center;
+    margin-top: 20px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}

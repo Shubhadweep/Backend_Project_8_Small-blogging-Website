@@ -1,0 +1,36 @@
+<%- include('../Includes/header.ejs')%>
+
+
+<link rel="stylesheet" href="/CSS/viewblog.css">
+
+<%-include('../Includes/navbar.ejs')%>
+
+</head>
+<body>
+
+<main>
+    <%if(data.length > 0){%>
+    <div class="container">
+        <h1 class="mb-4">Your Blog Detils</h1><br>
+        <button class="btn btn-secondary btn-custom" id="viewBlogBtn"><a href="/logOut">Log Out</a></button>
+        <br>
+        <br>
+        
+            <%for(let obj of data){%>
+                <div class="blog">
+                    <h3>Name: <%=obj.title%> </h3>
+                    <h3>Description: <%=obj.description%> </h3>
+                    <h3>Blog Image: <img src="<%=obj.image[0]%>" alt=""> <img src="<%=obj.image[1]%>" alt=""> </h3><br>
+                </div>    
+            <%}%>
+        
+        
+    </div>
+    
+    <%}else{%>
+        <h2>You have Created No Blogs</h2>
+    <%}%>
+</main>
+
+
+<%-include('../Includes/footer.ejs')%>

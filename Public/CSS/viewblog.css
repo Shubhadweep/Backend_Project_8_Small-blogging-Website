@@ -1,0 +1,22 @@
+img{
+    height: 200px;
+    width: 200px;
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+}
+.blog{
+    border: 2px solid black;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-inline: 10px;
+}
+a{
+    color: greenyellow;
+    text-decoration: none;
+}
+button{
+    height: 50px;
+    width: 100px;
+}
