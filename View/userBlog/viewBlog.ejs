@@ -11,16 +11,16 @@
 <main>
     <%if(data.length > 0){%>
     <div class="container">
-        <h1 class="mb-4">Your Blog Detils</h1><br>
+        <h1 class="mb-4"><i>Your Blog Details</i></h1><br>
         <button class="btn btn-secondary btn-custom" id="viewBlogBtn"><a href="/logOut">Log Out</a></button>
         <br>
         <br>
         
             <%for(let obj of data){%>
                 <div class="blog">
-                    <h3>Name: <%=obj.title%> </h3>
-                    <h3>Description: <%=obj.description%> </h3>
-                    <h3>Blog Image: <img src="<%=obj.image[0]%>" alt=""> <img src="<%=obj.image[1]%>" alt=""> </h3><br>
+                    <h3><i>Title:</i> <%=obj.title%> </h3><br>
+                    <h3><i>Description:</i> <%=obj.description%> </h3><br><br>
+                    <h3><i>Blog Image:</i> <img src="<%=obj.image[0]%>" alt=""> <img src="<%=obj.image[1]%>" alt=""> </h3><br>
                 </div>    
             <%}%>
         
